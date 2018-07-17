@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d8ff8729-ecf4-405c-a824-b6aff7925c51++8925",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d8ff8729-ecf4-405c-a824-b6aff7925c51++8925" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d8ff8729-ecf4-405c-a824-b6aff7925c51++8925" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "52DCB0A7-5964-4190-AF89-8CA24C5AA08D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d8ff8729-ecf4-405c-a824-b6aff7925c51++8925" : "Tools\/CocosBuilder\/Project\/CocosBuilder\/Examples\/CocosBuilderExample\/libs\/CCBReader\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CocosBuilder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CocosBuilder\/Project\/CocosBuilder\/CocosBuilder\/CocosBuilder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.xinggeq.com\/svn\/aoeii",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d8ff8729-ecf4-405c-a824-b6aff7925c51++8925"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.elex-tech.com\/svn\/aoeii",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d8ff8729-ecf4-405c-a824-b6aff7925c51++8925"
+    }
+  ]
+}

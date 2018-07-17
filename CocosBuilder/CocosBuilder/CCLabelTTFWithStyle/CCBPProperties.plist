@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>CCLabelTTFWithStyle</string>
+	<key>editorClassName</key>
+	<string>CCLabelTTFWithStyle</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>CCLabelTTFWithStyle</string>
+			<key>name</key>
+			<string>CCLabelTTFWithStyle</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Dimensions</string>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>dimensions</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Alignment</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>horizontalAlignment</string>
+			<key>extra</key>
+			<string>Left|0|Center|1|Right|2</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string></string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>verticalAlignment</string>
+			<key>extra</key>
+			<string>Top|0|Center|1|Bottom|2</string>
+		</dict>
+		<dict>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>default</key>
+			<string>Sample Text</string>
+			<key>displayName</key>
+			<string>Label Text</string>
+			<key>type</key>
+			<string>Text</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>style</string>
+			<key>displayName</key>
+			<string>Text Style</string>
+			<key>type</key>
+			<string>StyleText</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>ColorStyle</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>name</key>
+			<string>textColorStyle</string>
+			<key>extra</key>
+			<string>Normal|0|Red|1|Green|2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

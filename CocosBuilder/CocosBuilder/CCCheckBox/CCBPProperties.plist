@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>CCControl</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>CCB_CheckBox</string>
+	<key>editorClassName</key>
+	<string>CCB_CheckBox</string>
+	<key>propertiesOverridden</key>
+	<array/>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>CCB_CheckBox</string>
+			<key>name</key>
+			<string>CCB_CheckBox</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<string></string>
+				<string></string>
+			</array>
+			<key>affectsProperties</key>
+			<array>
+				<string>contentSize</string>
+			</array>
+			<key>displayName</key>
+			<string>Sprite frame</string>
+			<key>type</key>
+			<string>SpriteFrame</string>
+			<key>name</key>
+			<string>CheckSpriteFrame</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Checked</string>
+			<key>name</key>
+			<string>checked</string>
+			<key>type</key>
+			<string>Check</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>ScaleMode</string>
+			<key>name</key>
+			<string>checkIsScaled</string>
+			<key>type</key>
+			<string>Check</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>Point</string>
+			<key>name</key>
+			<string>checkAnchorPoint</string>
+			<key>displayName</key>
+			<string>Check Anchor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

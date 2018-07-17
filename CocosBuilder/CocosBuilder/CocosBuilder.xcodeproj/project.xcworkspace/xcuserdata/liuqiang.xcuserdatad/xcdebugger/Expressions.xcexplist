@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CocosBuilderAppDelegate searchFiles:]:CocosBuilderAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "outlineProject">
+            </PersistentString>
+            <PersistentString
+               value = "outlineHierarchy">
+            </PersistentString>
+            <PersistentString
+               value = "_searchResultList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InspectorStyleText selectedResource:]:InspectorStyleText.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[StyleManager setTextStyle:style:]:StyleManager.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SequencerHandler outlineView:validateDrop:proposedItem:proposedChildIndex:]:SequencerHandler.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "node.parent.parent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[TexturePropertySetter setSpriteFrameForNode:andProperty:withFile:andSheetFile:]:TexturePropertySetter.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "addSpriteFramesWithFile">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SequencerHandler outlineView:isItemExpandable:]:SequencerHandler.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CocosBuilderAppDelegate searchNodes:]:CocosBuilderAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedNodes">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CocosBuilderAppDelegate matchSearchFileItem:item:]:CocosBuilderAppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CCTextureCache addImage:]:CCTextureCache.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[InspectorStyleText willBeAdded]:InspectorStyleText.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "menuItemNULL">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CCControlButton setBackgroundSpriteFrame:forState:]:CCControlButton.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[CCBWriterInternal dictionaryFromCCObject:]:CCBWriterInternal.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "node">
+            </PersistentString>
+            <PersistentString
+               value = "exception">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CocosBuilderAppDelegate searchAnswer:]:CocosBuilderAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "checkSearchFileOption">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CocosBuilderAppDelegate setSelectedNodes:]:CocosBuilderAppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SequencerHandler outlineView:willDisplayCell:forTableColumn:item:]:SequencerHandler.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "bgcolor">
+            </PersistentString>
+            <PersistentString
+               value = "fgcolor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CocosBuilderAppDelegate searchNodeHandle:node:]:CocosBuilderAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "node.userObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CCControlButton setBackgroundSpriteFrameByNormalState:forState:]:CCControlButton.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "spriteNameNoType">
+            </PersistentString>
+            <PersistentString
+               value = "newSpriteName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

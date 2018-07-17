@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>CCPlaceHolder</string>
+	<key>editorClassName</key>
+	<string>CCPlaceHolder</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>Content size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>type</key>
+			<string>Size</string>
+			<key>default</key>
+			<array>
+				<integer>100</integer>
+				<integer>100</integer>
+			</array>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>CCPlaceHolder</string>
+			<key>name</key>
+			<string>CCPlaceHolder</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Node Type</string>
+			<key>name</key>
+			<string>nodeType</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>extra</key>
+			<string>ScrollView|1|TableView|2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

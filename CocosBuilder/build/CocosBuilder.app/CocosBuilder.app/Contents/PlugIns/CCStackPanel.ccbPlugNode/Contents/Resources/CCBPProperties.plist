@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<true/>
+	<key>className</key>
+	<string>CCStackPanel</string>
+	<key>editorClassName</key>
+	<string>CCStackPanel</string>
+	<key>propertiesOverridden</key>
+	<array/>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>displayName</key>
+			<string>CCStackPanel</string>
+			<key>name</key>
+			<string>CCStackPanel</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>Layout Direction</string>
+			<key>name</key>
+			<string>layoutDirection</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>extra</key>
+			<string>Left To Right|0|Right To Left|1|Top To Bottom|2|Bottom To Top|3</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>hAlignment</string>
+			<key>name</key>
+			<string>hAlignment</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>extra</key>
+			<string>Left|1|Center|2|Right|3</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>vAlignment</string>
+			<key>name</key>
+			<string>vAlignment</string>
+			<key>type</key>
+			<string>IntegerLabeled</string>
+			<key>extra</key>
+			<string>Top|1|Center|2|Bottom|3</string>
+		</dict>
+		<!--
+		<dict>
+			<key>displayName</key>
+			<string>contractionSize</string>
+			<key>name</key>
+			<string>contractionSize</string>
+			<key>type</key>
+			<string>Check</string>
+		</dict>
+		-->
+		<dict>
+			<key>displayName</key>
+			<string>Padding</string>
+			<key>name</key>
+			<string>Padding</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>paddingLeft</string>
+			<key>name</key>
+			<string>paddingLeft</string>
+			<key>type</key>
+			<string>Integer</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>paddingTop</string>
+			<key>name</key>
+			<string>paddingTop</string>
+			<key>type</key>
+			<string>Integer</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>paddingRight</string>
+			<key>name</key>
+			<string>paddingRight</string>
+			<key>type</key>
+			<string>Integer</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>paddingBottom</string>
+			<key>name</key>
+			<string>paddingBottom</string>
+			<key>type</key>
+			<string>Integer</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>Spacing</string>
+			<key>name</key>
+			<string>Spacing</string>
+			<key>type</key>
+			<string>Separator</string>
+			<key>dontSetInEditor</key>
+			<true/>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>spacingH</string>
+			<key>name</key>
+			<string>spacingH</string>
+			<key>type</key>
+			<string>Integer</string>
+		</dict>
+		
+		<dict>
+			<key>displayName</key>
+			<string>spacingV</string>
+			<key>name</key>
+			<string>spacingV</string>
+			<key>type</key>
+			<string>Integer</string>
+		</dict>
+		
+	</array>
+</dict>
+</plist>

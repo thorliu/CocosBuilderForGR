@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15C47a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PublishSettingsWindow">
+            <connections>
+                <outlet property="resDirArrayController" destination="42" id="51"/>
+                <outlet property="window" destination="1" id="30"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Publish Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="540"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="540"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="20" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="17" y="485" width="112" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Publish to directory:" id="21">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="294"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="18">
+                        <rect key="frame" x="393" y="10" width="73" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="19">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="acceptSheet:" target="-2" id="31"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="22">
+                        <rect key="frame" x="20" y="461" width="389" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="23">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="232"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishDirectory" id="35"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="24">
+                        <rect key="frame" x="412" y="460" width="48" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="smallSquare" title="Select" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="25">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectPublishDirectory:" target="-2" id="47"/>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="235"/>
+                        </connections>
+                    </button>
+                    <button id="26">
+                        <rect key="frame" x="17" y="169" width="444" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="Flatten paths when publishing" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="27">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.flattenPaths" id="38"/>
+                        </connections>
+                    </button>
+                    <button id="28">
+                        <rect key="frame" x="17" y="149" width="444" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="Publish to zip file" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="29">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishToZipFile" id="41"/>
+                        </connections>
+                    </button>
+                    <button id="73">
+                        <rect key="frame" x="17" y="129" width="444" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="Only publish ccb-files" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" state="on" inset="2" id="74">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.onlyPublishCCBs" id="76"/>
+                        </connections>
+                    </button>
+                    <popUpButton verticalHuggingPriority="750" id="52">
+                        <rect key="frame" x="363" y="166" width="100" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="53">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="54">
+                                <items>
+                                    <menuItem title="Item 1" state="on" id="55"/>
+                                    <menuItem title="Item 2" id="56"/>
+                                    <menuItem title="Item 3" id="57"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="-2" name="contentValues" keyPath="projectSettings.availableExporters" id="65"/>
+                            <binding destination="-2" name="selectedValue" keyPath="projectSettings.exporter" previousBinding="65" id="67"/>
+                        </connections>
+                    </popUpButton>
+                    <textField verticalHuggingPriority="750" id="58">
+                        <rect key="frame" x="229" y="171" width="132" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Publish ccb-files to:" id="59">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="128">
+                        <rect key="frame" x="229" y="151" width="132" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Automatic scaling from:" id="129">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="98">
+                        <rect key="frame" x="0.0" y="422" width="480" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="111">
+                        <rect key="frame" x="0.0" y="115" width="480" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="QOe-SC-gRm">
+                        <rect key="frame" x="0.0" y="50" width="480" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <popUpButton verticalHuggingPriority="750" id="130">
+                        <rect key="frame" x="363" y="146" width="100" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <popUpButtonCell key="cell" type="push" title="4x (ipadhd)" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="4" imageScaling="proportionallyDown" inset="2" selectedItem="133" id="131">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="132">
+                                <items>
+                                    <menuItem title="4x (ipadhd)" state="on" tag="4" id="133"/>
+                                    <menuItem title="2x (hd)" tag="2" id="134"/>
+                                    <menuItem title="1x (non-retina)" tag="1" id="135"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="-2" name="selectedTag" keyPath="projectSettings.resourceAutoScaleFactor" id="138"/>
+                        </connections>
+                    </popUpButton>
+                    <popUpButton verticalHuggingPriority="750" id="208">
+                        <rect key="frame" x="126" y="209" width="74" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <popUpButtonCell key="cell" type="push" title="1x" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="1" imageScaling="proportionallyDown" inset="2" selectedItem="211" id="209">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                            <menu key="menu" title="OtherViews" id="210">
+                                <items>
+                                    <menuItem title="4x" tag="4" id="213"/>
+                                    <menuItem title="2x" tag="2" id="212"/>
+                                    <menuItem title="1x" state="on" tag="1" id="211"/>
+                                </items>
+                            </menu>
+                            <connections>
+                                <binding destination="-2" name="selectedTag" keyPath="projectSettings.publishResolutionHTML5_scale" id="340"/>
+                            </connections>
+                        </popUpButtonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="285"/>
+                        </connections>
+                    </popUpButton>
+                    <button id="139">
+                        <rect key="frame" x="17" y="508" width="61" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="iOS" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="140">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishEnablediPhone" id="248"/>
+                        </connections>
+                    </button>
+                    <button id="141">
+                        <rect key="frame" x="17" y="437" width="83" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="iPhone (1x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="142">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="238"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_" id="311"/>
+                        </connections>
+                    </button>
+                    <button id="143">
+                        <rect key="frame" x="105" y="437" width="117" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="iPhone retina (2x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="144">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="241"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_hd" id="317"/>
+                        </connections>
+                    </button>
+                    <button id="147">
+                        <rect key="frame" x="302" y="437" width="103" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="iPad retina (4x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="148">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="244"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_ipadhd" id="321"/>
+                        </connections>
+                    </button>
+                    <button id="312">
+                        <rect key="frame" x="227" y="437" width="69" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="iPad (2x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="313">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnablediPhone" id="314"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_ipad" id="319"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="166" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="17" y="373" width="112" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Publish to directory:" id="180">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="297"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="167">
+                        <rect key="frame" x="20" y="349" width="389" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="179">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="253"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishDirectoryAndroid" id="229"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="1" id="168">
+                        <rect key="frame" x="412" y="348" width="48" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="smallSquare" title="Select" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="178">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectPublishDirectory:" target="-2" id="182"/>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="256"/>
+                        </connections>
+                    </button>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="169">
+                        <rect key="frame" x="0.0" y="310" width="480" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <button id="170">
+                        <rect key="frame" x="17" y="396" width="68" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="Android" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="177">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishEnabledAndroid" id="251"/>
+                        </connections>
+                    </button>
+                    <button id="171">
+                        <rect key="frame" x="17" y="325" width="92" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="xsmall (0.5x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="176">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="259"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_xsmall" id="323"/>
+                        </connections>
+                    </button>
+                    <button id="172">
+                        <rect key="frame" x="114" y="325" width="75" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="small (1x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="175">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="262"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_small" id="325"/>
+                        </connections>
+                    </button>
+                    <button id="173">
+                        <rect key="frame" x="194" y="325" width="101" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="medium (1.5x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="174">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="265"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_medium" id="327"/>
+                        </connections>
+                    </button>
+                    <button id="183">
+                        <rect key="frame" x="300" y="325" width="73" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="large (2x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="184">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="268"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_large" id="329"/>
+                        </connections>
+                    </button>
+                    <button id="185">
+                        <rect key="frame" x="378" y="325" width="80" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="xlarge (4x)" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="186">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledAndroid" id="271"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolution_xlarge" id="331"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="187" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="17" y="262" width="112" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Publish to directory:" id="205">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="300"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="usg-Ur-AWu" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="17" y="95" width="112" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Shell:" id="Rru-lC-JW0">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="215" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="17" y="214" width="107" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Global scale factor:" id="216">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="303"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="217" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="246" y="214" width="64" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Resolution:" id="218">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="306"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="227" customClass="CCBTextFieldLabel">
+                        <rect key="frame" x="382" y="214" width="11" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="x" id="228">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="309"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="188">
+                        <rect key="frame" x="20" y="238" width="389" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="204">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="279"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishDirectoryHTML5" id="333"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" tag="2" id="189">
+                        <rect key="frame" x="412" y="237" width="48" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="smallSquare" title="Select" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" controlSize="small" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="203">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectPublishDirectory:" target="-2" id="206"/>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="282"/>
+                        </connections>
+                    </button>
+                    <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="190">
+                        <rect key="frame" x="0.0" y="199" width="480" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <button id="191">
+                        <rect key="frame" x="17" y="285" width="62" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <buttonCell key="cell" type="check" title="HTML5" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="202">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishEnabledHTML5" id="276"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="221">
+                        <rect key="frame" x="315" y="212" width="64" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="222">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" localizesFormat="NO" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" groupingSeparator="," nilSymbol="Zlyng@R" id="223">
+                                <real key="minimum" value="1"/>
+                                <real key="maximum" value="4096"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="288"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolutionHTML5_width" id="335"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="224">
+                        <rect key="frame" x="396" y="212" width="64" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="225">
+                            <numberFormatter key="formatter" formatterBehavior="custom10_4" numberStyle="decimal" allowsFloats="NO" usesGroupingSeparator="NO" groupingSize="0" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" nilSymbol="Zlyng@R" id="226">
+                                <real key="minimum" value="1"/>
+                                <real key="maximum" value="4096"/>
+                            </numberFormatter>
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="enabled" keyPath="projectSettings.publishEnabledHTML5" id="291"/>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishResolutionHTML5_height" id="337"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="fQp-gp-JWO">
+                        <rect key="frame" x="20" y="68" width="440" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="HIk-TR-WGM">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="projectSettings.publishShellScript" id="PtG-Y8-Xkb"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <animations/>
+            </view>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="32"/>
+        <arrayController id="42">
+            <declaredKeys>
+                <string>path</string>
+            </declaredKeys>
+            <connections>
+                <binding destination="-2" name="contentArray" keyPath="projectSettings.resourcePaths" id="45"/>
+            </connections>
+        </arrayController>
+    </objects>
+</document>
